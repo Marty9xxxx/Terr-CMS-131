@@ -1,0 +1,111 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	font: 80% sans-serif;
+}
+#content {
+	margin: 40px auto 0 auto;
+	width: 300px;
+  color: #fff;
+}
+.rect {                     
+  border: 1px solid #6b6b6b;
+  padding: 10px;
+  margin: 0px 10px 10px 10px;              
+  text-align: center;
+  background: rgba(125,185,232,1);
+  background: linear-gradient(to bottom, rgba(125,185,232,1) 0%, rgba(30,87,153,1) 100%);
+  background: linear-gradient(top, rgba(125,185,232,1) 0%, rgba(30,87,153,1) 100%);
+}
+h1 {
+  text-align: right;
+  text-transform: uppercase;
+  border-bottom: 1px solid #000;
+  color: #4b4b4b;
+  width: 400px;
+}
+h2 {
+  text-transform: uppercase;
+  font-size: 11pt;
+  margin-bottom: -3px;
+  color: #4b4b4b;
+}
+h1:first-letter, h2:first-letter {
+  font-size: 125%;    
+}
+.rect input[type=text],.rect input[type=password] {
+  display: block;
+  width: 200px; 
+  margin: 5px auto; 
+}
+input[type=submit] {
+  float: right;
+  border: 1px solid #6b6b6b;
+  color: #fff;
+  background: rgba(125,185,232,1);
+  background: linear-gradient(to bottom, rgba(125,185,232,1) 0%, rgba(30,87,153,1) 100%);
+  background: linear-gradient(top, rgba(125,185,232,1) 0%, rgba(30,87,153,1) 100%);
+  padding: 7px;
+  font-weight: bold;
+  margin-right: 10px;  
+}
+.rect p {
+  margin: 0 auto;
+  padding: 0;
+  width: 200px;
+  text-align: left;
+}
+#parent { display: inline-block; }
+#parent div { float: left;}
+.right { float: right;}
+.rect div#space { width: 10px; height: 1px; }
+.left-text { text-align: left;}
+.error {
+  display: none;
+  background: rgba(252,0,0,1);
+  background: linear-gradient(to bottom, rgba(252,0,0,1) 0%, rgba(211,0,0,1) 100%);
+  background: linear-gradient(top, rgba(252,0,0,1) 0%, rgba(211,0,0,1) 100%);
+}
+#cze-white, #us-white {
+  width: 52px;
+  height: 26px;
+  background: #fff;;
+  border: 1px solid #000;
+  position: relative;
+  display: inline-block;
+  margin: -3px 0;
+  cursor: pointer;
+}
+#cze-blue {
+  border-left: 26px solid #00f;
+  border-top: 13px solid transparent;
+  border-bottom: 13px solid transparent;
+  position: absolute;
+  top: 0;
+}
+#cze-red {
+  width: 52px;
+  height: 13px;
+  background: #f00;
+  position: absolute;
+  bottom: 0    
+}
+.us-red {
+  width: 52px;
+  height: 2px;
+  margin-bottom: 2px;  
+  background: #f00; 
+}
+#us-blue {
+  width: 22px;
+  height: 14px;
+  background: #00f;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#us-blue div {
+  color: #fff;
+  height: 2px;
+  font-size: 2pt  
+}

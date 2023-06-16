@@ -1,0 +1,40 @@
+<?php    
+define("LANG_STATIC_URL", "Static URL");
+define("LANG_DATABASE_TYPE", "Database type");
+define("LANG_DATABASE", "Database login");
+define("LANG_ADMINISTRATION", "Administration");
+define("LANG_RETYPE_PASSWORD", "Retype password");
+define("LANG_INSTALL", "Install");
+define("LANG_INSTALLATION", "Installation");
+define("LANG_UPDATE", "Update");
+define("LANG_DATABASE_SERVER", "Server");
+define("LANG_USERNAME", "Username");
+define("LANG_PASSWORD", "Password");
+define("LANG_DATABASE_NAME", "Database name");
+define("LANG_USE_AN_EXISTING_DATABASE", "Use an existing database");
+define("LANG_CREATE_A_NEW_DATABASE", "Create a new database");
+define("LANG_DYNAMIC_URL", "Dynamic URL");
+define("LANG_CHANGELOG", "Changelog");
+define("LANG_DO_UPDATE", "Update");
+define("LANG_CANNOT_CHANGE_FP", "Your hosting does not support changing file permissions");
+define("LANG_SET_FP_MANUALLY", "Because of it you have to set file permissions manually");
+define("LANG_CONNECT_TO_FTP", "Connect to your FTP");
+define("LANG_SET_FP_TO_SEVEN", "Set file permissions 777 to folowing");
+define("LANG_LANGUAGE", "Language");
+define("LANG_EMPTY_PASSWORD", "Empty password");
+define("LANG_SHORT_PASSWORD", "Short password");
+define("LANG_PASSWORDS_DONT_MATCH", "Passwords do not match");
+define("LANG_CANNOT_CONNECT_TO_DATABASE", "Cannot connect to database");
+define("LANG_CANNOT_SELECT_CREATED_DATABASE", "Cannot select created database");
+define("LANG_CANNOT_CREATE_DATABASE", "Cannot create database");
+define("LANG_CANNOT_SELECT_ENTERED_DATABASE", "Cannot select entered database");
+define("LANG_CANNOT_OPEN_DATABASE", "Cannot open database");
+define("LANG_RELOAD", "Reload");
+define("LANG_COULDNT_CREATE_CONFIG", "<h3>A necessary file has not been created</h3>Please, create file <strong>config.php</strong>, put code below into it and upload it to root directory of your FTP.");
+define("LANG_COULDNT_REMOVE_INSTALL_DIR", "<h3>Removing install directory was not successful</h3>Please, remove directory <strong>/install</strong> from root directory of your FTP.");
+define("LANG_VERSION", "Version");
+define("LANG_VERSIONS_DONT_MATCH", "Required version: ");
+define("LANG_VERSIONS_DONT_MATCH2", "Your version: ");
+
+define("LANG_CHANGES_LIST", "Possibility to install and use system in a folder");
+?>

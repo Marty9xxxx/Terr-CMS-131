@@ -1,0 +1,40 @@
+<?php    
+define("LANG_STATIC_URL", "Statické URL");
+define("LANG_DATABASE_TYPE", "Typ databáze");
+define("LANG_DATABASE", "Údaje k databázi");
+define("LANG_ADMINISTRATION", "Administrace");
+define("LANG_RETYPE_PASSWORD", "Zopakujte heslo");
+define("LANG_INSTALL", "Instalovat");
+define("LANG_INSTALLATION", "Instalace");
+define("LANG_UPDATE", "Aktualizace");
+define("LANG_DATABASE_SERVER", "Server");
+define("LANG_USERNAME", "Uživatelské jméno");
+define("LANG_PASSWORD", "Heslo");
+define("LANG_DATABASE_NAME", "Název databáze");
+define("LANG_USE_AN_EXISTING_DATABASE", "Použít existující databázi");
+define("LANG_CREATE_A_NEW_DATABASE", "Vytvořit novou databázi");
+define("LANG_DYNAMIC_URL", "Dynamické URL");
+define("LANG_CHANGELOG", "Přináší změny");
+define("LANG_DO_UPDATE", "Aktualizovat");
+define("LANG_CANNOT_CHANGE_FP", "Nelze změnit atributy");
+define("LANG_SET_FP_MANUALLY", "Je nutné, abyste nastavili práva ručně");
+define("LANG_CONNECT_TO_FTP", "Připojte se na vaše FTP");
+define("LANG_SET_FP_TO_SEVEN", "Upravte práva následujících na 777");
+define("LANG_LANGUAGE", "Jazyk");
+define("LANG_EMPTY_PASSWORD", "Nevyplněné heslo");
+define("LANG_SHORT_PASSWORD", "Příliš krátké heslo");
+define("LANG_PASSWORDS_DONT_MATCH", "Hesla se neshodují");
+define("LANG_CANNOT_CONNECT_TO_DATABASE", "Nelze se připojit do databáze");
+define("LANG_CANNOT_SELECT_CREATED_DATABASE", "Nelze vybrat vytvořenou databázi");
+define("LANG_CANNOT_CREATE_DATABASE", "Nelze vytvořit databázi");
+define("LANG_CANNOT_SELECT_ENTERED_DATABASE", "Nelze vybrat zadanou databázi");
+define("LANG_CANNOT_OPEN_DATABASE", "Nelze otevřít databázi");
+define("LANG_RELOAD", "Zkuzit znovu");
+define("LANG_COULDNT_CREATE_CONFIG", "<h3>Bohužel se nepodařilo vytvořit soubor nezbytný pro chod systému</h3>Prosím, vytvořte soubor <strong>config.php</strong>, vložte do něj níže uvedený text a nahrajte soubor do kořenového adresáře (rootu) ftp.");
+define("LANG_COULDNT_REMOVE_INSTALL_DIR", "<h3>Nepodařilo se odstranit složku s instalací</h3>Prosím, odstraňte složku <strong>/install</strong> z kořenového adresáře (rootu) ftp.");
+define("LANG_VERSION", "Verze");
+define("LANG_VERSIONS_DONT_MATCH", "Požadovaná verze: ");
+define("LANG_VERSIONS_DONT_MATCH2", "Vaše verze: ");
+
+define("LANG_CHANGES_LIST", "Možnost instalace a používání ve složce");
+?>

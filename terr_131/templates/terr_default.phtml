@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="<?php echo $config_variables->get("lang"); ?>">
+<head>
+<?php /* [CZ]: načtení meta hlaviček */ include "components/pages_index/meta.php"; ?>
+</head>
+<body>
+
+<?php /* [CZ]: hlavička (název webu) */ ?>
+<header><h1><?php echo $config_variables->get("sitename"); ?></h1></header>
+
+<?php /* [CZ]: lišta s aktuální sekcí/článkem */ ?>
+<nav><?php echo $index->get_h1_bar(); ?></nav>
+
+<div id="content">
+
+<?php /* [CZ]: levý sloupec */ ?>
+<aside id="left-column">
+
+<?php /* [CZ]: sekce */ $index->get_sections(); ?>
+<?php /* [CZ]: anketa */ $index->get_main_poll(); ?>
+<?php /* [CZ]: galerie */ $index->get_galleries(); ?>
+<?php /* [CZ]: položky levého sloupce */ $index->get_column_items("left"); ?>
+<?php /* [CZ]: poslední komentáře */ $index->get_last_5comments(); ?>
+<?php /* [CZ]: poslední návštěvníci */ $index->get_5lastvisitors(); ?>
+
+</aside>
+
+<?php /* [CZ]: středový sloupec, NEUPRAVOVAT */ ?>
+<section><?php include "components/pages_index/center_column.php"; ?></section>
+
+<?php /* [CZ]: pravý sloupec */ ?>
+<aside id="right-column">
+
+<?php /* [CZ]: přihlašovací formulář */ $index->get_login_form(); ?>
+<?php /* [CZ]: aktuální články */ $index->get_recent_articles(); ?>
+<?php /* [CZ]: položky pravého sloupce */ $index->get_column_items("right"); ?>
+<?php /* [CZ]: náhodný obrázek */ $index->get_random_image(); ?>
+<?php /* [CZ]: počet registrovaných */ $index->get_users_number(); ?>
+<?php /* [CZ]: sloupce sekcí */ $index->get_sections_content(); ?>
+
+</aside>
+
+<div class="float-ending"><!-- --></div>
+
+</div>
+
+<?php /* [CZ]: patička, NEUPRAVOVAT */ ?>
+<footer><?php include "components/pages_index/footer.php"; ?></footer>
+
+</body>
+</html>
