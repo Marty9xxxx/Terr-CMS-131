@@ -6,4 +6,5 @@
  I'm looking for a good soul who will modify it to a usable state according to the current specifications and needs ;)
  Thanks Marty9xxxx (c) 6/2023
  wwbsite: https://www.svatousek.cz/
->>>>>>> Stashed changes
+
+Last functionaly is in php 5.6, hightly non. ;)
