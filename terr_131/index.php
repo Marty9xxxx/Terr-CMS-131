@@ -1,5 +1,5 @@
 <?php
-//error_reporting(E_ALL);
+error_reporting(E_ALL);
 
 //---[CZ]: pokud chceme aktualizovat systém
 if (file_exists("install/install.php")==1) { header("Location: install/install.php"); }
@@ -8,7 +8,7 @@ if (file_exists("install/install.php")==1) { header("Location: install/install.p
 define("CLASSES_PATH", "components/classes/");
 
 //---[CZ]: načteme soubor s DB údaji
-@include "config.php";
+ @include config.php";
 
 //---[CZ]: definování proměnných
 if (!isset($_GET["action"])) { $_GET["action"]=""; }
