@@ -8,19 +8,19 @@ if (file_exists("install/install.php")==1) { header("Location: install/install.p
 define("CLASSES_PATH", "components/classes/");
 
 //---[CZ]: načteme soubor s DB údaji
- @include config.php";
+ include config.php";
 
 //---[CZ]: definování proměnných
-if (!isset($_GET["action"])) { $_GET["action"]=""; }
-if (!isset($_GET["function"])) { $_GET["function"]=""; }
-if (!isset($_GET["link"])) { $_GET["link"]=""; }
-if (!isset($_GET["article"])) { $_GET["article"]=""; }
-if (!isset($_GET["section"])) { $_GET["section"]=""; }
-if (!isset($_GET["profile"])) { $_GET["profile"]=""; }
-if (!isset($_GET["gallery"])) { $_GET["gallery"]=""; }
-if (!isset($_GET["string"])) { $_GET["string"]=""; }
-if (!isset($_GET["pm"])) { $_GET["pm"]=""; }
-if (!isset($_GET["page"])) { $_GET["page"]=1; }
+$_GET["action"] = isset($_GET["action"]) ? $_GET["action"] : "";
+$_GET["function"] = isset($_GET["function"]) ? $_GET["function"] : "";
+$_GET["link"] = isset($_GET["link"]) ? $_GET["link"] : "";
+$_GET["article"] = isset($_GET["article"]) ? $_GET["article"] : "";
+$_GET["section"] = isset($_GET["section"]) ? $_GET["section"] : "";
+$_GET["profile"] = isset($_GET["profile"]) ? $_GET["profile"] : "";
+$_GET["gallery"] = isset($_GET["gallery"]) ? $_GET["gallery"] : "";
+$_GET["string"] = isset($_GET["string"]) ? $_GET["string"] : "";
+$_GET["pm"] = isset($_GET["pm"]) ? $_GET["pm"] : "";
+$_GET["page"] = isset($_GET["page"]) ? $_GET["page"] : "";
 
 //---[CZ]: načteme potřebné třídy
 include CLASSES_PATH."Db_layer_".DB_TYPE.".php";
@@ -48,7 +48,7 @@ if ($index->check_ban()==0):
 define("URL_TYPE", $config_variables->get("url_type"));
 
 //---[CZ]: načteme jazykový soubor
-include ("languages/".$config_variables->get("lang").".php");
+include __DIR__ . "/languages/".$config_variables->get("lang").".php";
 
 //---[CZ]: odstartujeme session
 session_start();
@@ -103,6 +103,6 @@ if ($_GET["action"]=="vote") { $index->vote(); }
 //---[CZ]: uložení změn v profilu
 if ($_GET["profile"]!="" AND isset($_POST["submit"])) { $profile->update(); }
 
-include "templates/".$config_variables->get("template").".phtml";
-
+include __DIR__ . "/teplates/".$config_variables->get("template").".phtml";
+ 
 else: include "components/pages_index/ban_page.php"; endif; ?>
